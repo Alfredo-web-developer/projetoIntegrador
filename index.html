@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+    <title>Daily Task</title>
+</head>
+
+<body class="bg-dark">
+
+    <div class="container">
+        <h1 class="text-light">Daily Task</h1>
+        <div class="addTask row g-3 align-items-center">
+            <form action="" class="row g-3 myForm">
+
+                <!-- Campo para preenchimento da tarefa -->
+                <div class="col-md-4 text-light">
+                    <label class="form-label">Qual Tarefa</label>
+                    <input class="form-control" type="text" name="nameTask" id="" placeholder="Digite sua tarefa">
+                </div>
+
+                <!-- Materia da Tarefa -->
+                <div class="col-md-3">
+                    <label class="form-label text-light">Materia</label>
+                    <select id="idMateria" name="materiaTask" class="form-select mySelect">
+                        <option value="Contabilidade de Custos">Contabilidade de Custos</option>
+                        <option value="Desenvolvimento WEB">Desenvolvimento WEB</option>
+                        <option value="Comunicação">Comunicação</option>
+                        <option value="Projeto Integrador">Projeto Integrador</option>
+                        <option value="Estrura de Dados">Estrura de Dados</option>
+                    </select>
+                </div>
+
+                <!-- Status da tarefa -->
+                <div class="col-md-3">
+                    <label class="form-label status text-light">Status</label>
+                    <select id="idStatus" name="optionStatus" id="" class="myStatus form-select">
+                        <option value="Completo">Completo</option>
+                        <option value="Em andamento">Em adamento</option>
+                        <option value="Pendente">Pendente</option>
+                    </select>
+                </div>
+
+                <!-- Adiciona a tarefa -->
+                <div class="col-md-2">
+                    <button type="submit" class="myBtn btn btn-primary">Add</button>
+                </div>
+
+            </form>
+        </div>
+
+        <hr>
+
+        <h1 class="text-light">Tarefas</h1>
+        <table class="table text-light">
+            <thead>
+                <tr>
+                    <td>Task</td>
+                    <td>Materia</td>
+                    <td>Status</td>
+                    <td>Update</td>
+                </tr>
+            </thead>
+            <tbody class="listTask">
+
+            </tbody>
+        </table>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
+    <script src="main.js"></script>
+</body>
+
+</html>
